@@ -1,0 +1,47 @@
+
+import { Briefcase, User, Globe } from 'lucide-react';
+import ProjectCard from '../ui/ProjectCard';
+
+export default function Stats() {
+  const stats = [
+    {
+      title: "TOTAL PROJECTS",
+      value: "12",
+      icon: <Briefcase className="w-8 h-8" />,
+      description: "Innovative web solutions crafted"
+    },
+    {
+      title: "CERTIFICATES",
+      value: "8",
+      icon: <User className="w-8 h-8" />,
+      description: "Professional skills validated"
+    },
+    {
+      title: "YEARS OF EXPERIENCE",
+      value: "5",
+      icon: <Globe className="w-8 h-8" />,
+      description: "Continuous learning journey"
+    }
+  ];
+
+  return (
+    <section className="py-12">
+      <div className="container">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {stats.map((stat, index) => (
+            <ProjectCard key={index} className="flex flex-col items-center p-8">
+              <div className="p-4 mb-4 rounded-full bg-purple-light/10">
+                {stat.icon}
+              </div>
+              <h3 className="mt-2 text-5xl font-bold text-purple-light">{stat.value}</h3>
+              <p className="mt-2 text-xs font-semibold tracking-wider text-center uppercase">
+                {stat.title}
+              </p>
+              <p className="mt-2 text-sm text-center text-muted-foreground">{stat.description}</p>
+            </ProjectCard>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
