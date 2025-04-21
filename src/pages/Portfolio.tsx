@@ -1,13 +1,27 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import SectionTitle from "@/components/ui/SectionTitle";
 import ProjectCard from "@/components/ui/ProjectCard";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
+type LocationState = {
+  activeTab?: "projects" | "certificates" | "tech";
+};
+
 export default function Portfolio() {
+  const location = useLocation();
   const [activeTab, setActiveTab] = useState("projects");
   
+  useEffect(() => {
+    const state = location.state as LocationState;
+    if (state?.activeTab) {
+      setActiveTab(state.activeTab);
+      // Clear the state after using it
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
+
   const projects = [
     {
       title: "E-commerce Platform",

@@ -1,20 +1,25 @@
 
 import { Briefcase, User, Globe } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import ProjectCard from '../ui/ProjectCard';
 
 export default function Stats() {
+  const navigate = useNavigate();
+
   const stats = [
     {
       title: "TOTAL PROJECTS",
       value: "12",
       icon: <Briefcase className="w-8 h-8" />,
-      description: "Innovative web solutions crafted"
+      description: "Innovative web solutions crafted",
+      onClick: () => navigate('/portfolio', { state: { activeTab: 'projects' } })
     },
     {
       title: "CERTIFICATES",
       value: "8",
       icon: <User className="w-8 h-8" />,
-      description: "Professional skills validated"
+      description: "Professional skills validated",
+      onClick: () => navigate('/portfolio', { state: { activeTab: 'certificates' } })
     },
     {
       title: "YEARS OF EXPERIENCE",
@@ -29,7 +34,11 @@ export default function Stats() {
       <div className="container">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {stats.map((stat, index) => (
-            <ProjectCard key={index} className="flex flex-col items-center p-8">
+            <ProjectCard 
+              key={index} 
+              className={`flex flex-col items-center p-8 ${stat.onClick ? 'cursor-pointer hover:scale-105 transition-transform' : ''}`}
+              onClick={stat.onClick}
+            >
               <div className="p-4 mb-4 rounded-full bg-purple-light/10">
                 {stat.icon}
               </div>
