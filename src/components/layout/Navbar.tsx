@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 py-4 bg-background/95 backdrop-blur-sm">
       <div className="container flex items-center justify-between mx-auto">
         <Link to="/" className="text-2xl font-bold text-purple-light">
-          Ekizr
+          Hulli
         </Link>
         <ul className="flex items-center space-x-8">
           {navItems.map((item) => (

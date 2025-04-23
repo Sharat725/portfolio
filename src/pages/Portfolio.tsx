@@ -24,34 +24,34 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with product management, cart functionality, and payment processing.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Food Recipe Finder",
+      description: "Food Recipe Finder is a user-friendly web app that helps you discover delicious recipes based on ingredients you already have.",
+      image: "./images/food.png",
+      tech: ["React", "Node.js", "Express", "Axios"],
       github: "#",
       live: "#"
     },
     {
-      title: "Task Management App",
-      description: "A productivity application for managing tasks, projects, and team collaboration.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80",
-      tech: ["React", "Redux", "Firebase"],
+      title: "TRAVEL AND TOUR MANAGEMENT SYSTEM",
+      description: "Tourism management simplifies the management process in travelling. It’s fast processing and also it provides immediate results with high-security.",
+      image: "./images/tms.jpg",
+      tech: ["HTML", "CSS", "PHP"],
       github: "#",
       live: "#"
     },
     {
-      title: "Portfolio Website",
-      description: "A customizable portfolio template for developers and designers to showcase their work.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
-      tech: ["React", "Tailwind CSS", "Framer Motion"],
+      title: "CRACK THE CARRIER",
+      description: "Crack The Career aims to help students navigate career challenges by providing access to information, guidance, and tools.",
+      image: "./images/career.jpg",
+      tech: ["HTML", "CSS", "MYSQL"],
       github: "#",
       live: "#"
     },
     {
-      title: "Weather Dashboard",
-      description: "A weather application showing forecasts, historical data, and interactive maps.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
-      tech: ["JavaScript", "OpenWeather API", "Chart.js"],
+      title: "MediConnect",
+      description: "Connect with healthcare providers, manage appointments, and access your medical records - all in one secure platform.",
+      image: "./images/medi.png",
+      tech: ["TypeScript", "React", "Tailwind CSS"],
       github: "#",
       live: "#"
     }
@@ -59,22 +59,22 @@ export default function Portfolio() {
 
   const certificates = [
     {
-      title: "React - The Complete Guide",
-      issuer: "Udemy",
+      title: "DSA Using JAVA",
+      issuer: "Codechef",
       date: "2023",
-      image: "/lovable-uploads/01a035d5-bad6-4cc0-8fef-dac73d5491b8.png"
+      image: "./images/crt1.png"
     },
     {
-      title: "Advanced JavaScript Concepts",
-      issuer: "Coursera",
-      date: "2022",
-      image: "/lovable-uploads/01a035d5-bad6-4cc0-8fef-dac73d5491b8.png"
+      title: " Python Django",
+      issuer: "Infosys Springboard",
+      date: "2025",
+      image: "./images/crt2.png"
     },
     {
       title: "Fullstack Web Development",
-      issuer: "Codecademy",
-      date: "2022",
-      image: "/lovable-uploads/01a035d5-bad6-4cc0-8fef-dac73d5491b8.png"
+      issuer: "Udemy",
+      date: "2025",
+      image: "./images/crt.png"
     }
   ];
 

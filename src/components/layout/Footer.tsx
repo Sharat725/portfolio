@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="py-8 mt-20 border-t border-border/30">
       <div className="container">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <div className="text-xl font-bold text-purple-light">Ekizr</div>
+          <div className="text-xl font-bold text-purple-light">Hulli</div>
           <div className="flex flex-col items-center gap-2 md:flex-row">
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} - All rights reserved

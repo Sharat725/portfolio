@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <div className="absolute inset-0 rounded-full bg-gradient-radial from-purple-light/20 to-transparent"></div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80"
+              src="./images/profile.jpeg"
               alt="Profile"
               className="object-cover w-full h-full rounded-full ring-2 ring-purple-light/50"
             />

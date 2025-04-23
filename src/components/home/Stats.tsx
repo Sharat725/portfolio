@@ -9,21 +9,21 @@ export default function Stats() {
   const stats = [
     {
       title: "TOTAL PROJECTS",
-      value: "12",
+      value: "6",
       icon: <Briefcase className="w-8 h-8" />,
       description: "Innovative web solutions crafted",
       onClick: () => navigate('/portfolio', { state: { activeTab: 'projects' } })
     },
     {
       title: "CERTIFICATES",
-      value: "8",
+      value: "4",
       icon: <User className="w-8 h-8" />,
-      description: "Professional skills validated",
+      description: "Beginner skills validated",
       onClick: () => navigate('/portfolio', { state: { activeTab: 'certificates' } })
     },
     {
       title: "YEARS OF EXPERIENCE",
-      value: "5",
+      value: "1.5",
       icon: <Globe className="w-8 h-8" />,
       description: "Continuous learning journey"
     }

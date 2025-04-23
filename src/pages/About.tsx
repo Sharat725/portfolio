@@ -29,7 +29,7 @@ export default function About() {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
         <div className="md:col-span-1">
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" 
+            src="./images/profile.jpeg" 
             alt="Profile" 
             className="object-cover w-full h-64 rounded-lg md:h-80"
           />
@@ -39,21 +39,19 @@ export default function About() {
           <h3 className="mb-4 text-2xl font-semibold">My Background</h3>
           
           <p className="mb-4 text-muted-foreground">
-            I'm a passionate frontend developer with expertise in creating responsive, user-friendly websites 
-            and applications. With a strong foundation in modern JavaScript frameworks and libraries, 
-            I specialize in building intuitive UI components and seamless user experiences.
+          I'm a frontend developer who loves building websites and web apps that are easy to use and look great on all devices. I enjoy working with tools like HTML, CSS, and JavaScript to create clean and interactive user interfaces.
           </p>
           
           <p className="mb-6 text-muted-foreground">
-            My journey in web development began 5 years ago, and since then, I've worked on a variety 
-            of projects ranging from small business websites to complex web applications. I'm constantly 
-            exploring new technologies and methodologies to stay at the forefront of web development.
+          I started learning web development 1.5 years ago, and since then, I've worked on different kinds of projects—from simple websites to more advanced web apps. I'm always curious about new technologies and enjoy learning ways to make my work better.
+
+
           </p>
           
           <div className="grid grid-cols-2 gap-4">
             <div className="flex items-center">
               <FileText className="w-5 h-5 mr-2 text-purple-light" />
-              <span>BSc in Computer Science</span>
+              <span>B.Tech in Computer Science and Engineering</span>
             </div>
             <div className="flex items-center">
               <Monitor className="w-5 h-5 mr-2 text-purple-light" />
@@ -62,10 +60,6 @@ export default function About() {
             <div className="flex items-center">
               <Server className="w-5 h-5 mr-2 text-purple-light" />
               <span>Backend Knowledge</span>
-            </div>
-            <div className="flex items-center">
-              <Code className="w-5 h-5 mr-2 text-purple-light" />
-              <span>Clean Code Advocate</span>
             </div>
           </div>
         </div>
